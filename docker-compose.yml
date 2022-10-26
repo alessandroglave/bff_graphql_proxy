@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  bff_graphql_proxy:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: bff_graphql_proxy
+    ports:
+      - "4000:4000"
+    #restart: always
